@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWA DEMO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/app.js"></script>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- ios support-->
+    <link rel="apple-touch-icon" href="/images/icons/icon-512x512.png" />
+    <!-- <meta name="apple-mobile-web-app-status-bar" content="#ccc"> -->
+
+    <!-- this overrides the theme color of manifest -->
+    <!-- <meta name="theme-color" content="#ccc"> -->
+
+</head>
+
+<body>
+    <div>
+        <div class=" max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+            <div>
+                <div>
+                    <img class="h-48 w-full object-cover xl:h-full xl:w-48" src="images/pic1.jpeg" alt="Man looking at item at a store">
+                </div>
+                <div class="p-8">
+                    <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Case study</div>
+                    <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Finding customers for your new business</a>
+                    <p class="mt-2 text-slate-500">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-10 max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+            <div>
+                <div class="md:shrink-0">
+                    <img class="h-48 w-full object-cover md:h-full xl:w-48" src="images/pic2.jpeg" alt="Man looking at item at a store">
+                </div>
+                <div class="p-8">
+                    <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Case study</div>
+                    <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Finding customers for your new business</a>
+                    <p class="mt-2 text-slate-500">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-10 max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+            <div>
+                <div class="md:shrink-0">
+                    <img class="h-48 w-full object-cover md:h-full xl:w-48" src="images/pic3.jpeg" alt="Man looking at item at a store">
+                </div>
+                <div class="p-8">
+                    <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Case study</div>
+                    <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Finding customers for your new business</a>
+                    <p class="mt-2 text-slate-500">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="mt-10 max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+            <div>
+                <div class="md:shrink-0">
+                    <img class="h-48 w-full object-cover md:h-full xl:w-48" src="images/pic4.jpeg" alt="Man looking at item at a store">
+                </div>
+                <div class="p-8">
+                    <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Case study</div>
+                    <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Finding customers for your new business</a>
+                    <p class="mt-2 text-slate-500">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-10 max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+            <div>
+                <div class="md:shrink-0">
+                    <img class="h-48 w-full object-cover md:h-full xl:w-48" src="images/pic5.jpeg" alt="Man looking at item at a store">
+                </div>
+                <div class="p-8">
+                    <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Case study</div>
+                    <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Finding customers for your new business</a>
+                    <p class="mt-2 text-slate-500">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class=" mt-10 max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+            <div>
+                <div class="md:shrink-0">
+                    <img class="h-48 w-full object-cover md:h-full xl:w-48" src="images/pic6.jpeg" alt="Man looking at item at a store">
+                </div>
+                <div class="p-8">
+                    <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Case study</div>
+                    <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Finding customers for your new business</a>
+                    <p class="mt-2 text-slate-500">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="pwa-prompt" class="pwa-prompt">
+            <ul class="shadow-secondary">
+                <li>
+                    <img src="images/icons/icon-128x128.png" alt="TTN PWA" />
+                </li>
+                <li class="pwa-text">
+                    <a href="#" id="add-to-home">
+                        Add to Home screen
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <script>
+        let deferredPrompt;
+        const pwaPrompt = document.getElementById('pwa-prompt');
+        const addToHome = document.getElementById('add-to-home');
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+            // Prevent the mini-infobar from appearing on mobile
+            e.preventDefault();
+            // Stash the event so it can be triggered later.
+            deferredPrompt = e;
+            // Update UI notify the user they can install the PWA
+            console.log('show install prompt');
+            pwaPrompt.style.display = 'block';
+        });
+
+
+        addToHome.addEventListener('click', (e) => {
+            // Hide the app provided install promotion
+            console.log('hide install prompt');
+            pwaPrompt.style.display = 'none';
+            // Show the install prompt
+            deferredPrompt.prompt();
+            // Wait for the user to respond to the prompt
+            deferredPrompt.userChoice.then((choiceResult) => {
+                if (choiceResult.outcome === 'accepted') {
+                    console.log('User accepted the install prompt');
+                } else {
+                    console.log('User dismissed the install prompt');
+                }
+            });
+        });
+    </script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+
+    <script>
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyASw3NBWzhxHCakN1j-2PU8Xe8yEiQVhT4",
+            authDomain: "pwa-test-340205.firebaseapp.com",
+            projectId: "pwa-test-340205",
+            storageBucket: "pwa-test-340205.appspot.com",
+            messagingSenderId: "152877142103",
+            appId: "1:152877142103:web:ed53a6f358726de1a1d312",
+            measurementId: "G-8F6K2HBCKV"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore()
+    </script>
+
+
+</body>
+
+</html>

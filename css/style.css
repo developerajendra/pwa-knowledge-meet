@@ -1,0 +1,28 @@
+.pwa-prompt {
+    display: none;
+}
+
+.pwa-prompt ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    right: 4%;
+    z-index: 999;
+    bottom: 0;
+    background: #fff;
+    width: 100%;
+    max-width: 444px;
+    right: 0;
+    box-shadow: 0 0 10px #0a0909;
+    margin: 33px 0;
+}
+
+.pwa-text {
+    text-align: center;
+    width: 185px;
+}
+
+img {
+    max-width: 73px;
+}
