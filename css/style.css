@@ -1,3 +1,7 @@
+.card-container {
+    padding: 50px;
+}
+
 .pwa-prompt {
     display: none;
 }

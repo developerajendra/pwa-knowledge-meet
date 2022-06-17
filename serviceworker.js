@@ -88,13 +88,7 @@ self.addEventListener("activate",event=>{
 
 self.addEventListener('fetch', function(event) {
     console.log('fetch event', event);
-    // event.respondWith(
-    //     caches.match(event.request).then(function(cachedResponse) {
-    //         return cachedResponse || fetch(event.request);
-    //     }).catch(error=>caches.match('/offline.html'))
-    // );
-
+    if(event.request.url.indexOf('firestore.googleapis.com')<0) //skip google apis 
     cachingStrategies.staleWhileRevalidate(event,'/offline.html');
-    
   });
 
