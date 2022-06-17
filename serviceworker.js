@@ -10,7 +10,7 @@ let cacheTypes = {
             '/index.html',
             '/images/pic1.jpeg',
             '/offline.html',
-            // 'https://cdn.tailwindcss.com'
+            '/js/tailwind.js'
         ]
     }
 }
