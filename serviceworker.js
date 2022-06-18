@@ -1,5 +1,5 @@
 let cacheTypes = {
-    cacheVersion:'v8',
+    cacheVersion:'v1',
     startUrl:{
         cacheName:`start-url`,
         cacheUrl:'/'
@@ -10,6 +10,7 @@ let cacheTypes = {
             '/index.html',
             '/images/pic1.jpeg',
             '/offline.html',
+            '/css/style.css',
             '/js/tailwind.js'
         ]
     }
@@ -94,7 +95,7 @@ self.addEventListener('fetch', function(event) {
     //     }).catch(error=>caches.match('/offline.html'))
     // );
 
-    cachingStrategies.staleWhileRevalidate(event,'/offline.html');
+    cachingStrategies.cacheFirst(event,'/offline.html');
     
   });
 
